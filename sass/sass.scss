@@ -5,6 +5,9 @@ body{
 a:hover{
 text-decoration: none;
 }
+// .fas.fa-search, .fas.fa-search{
+//     float: right!important;
+// }
 #home{
     background: url(../images/home-bk.jpg) no-repeat;
     background-size: cover;
@@ -208,7 +211,7 @@ text-decoration: none;
             color: #34495e;
             margin-top: 5px;
             margin-bottom:24px; 
-            float: left;
+            float: right;
             width: 25px;  
             cursor: pointer;          
         }  
