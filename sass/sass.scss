@@ -16,6 +16,7 @@ text-decoration: none;
         background: rgba(0,0, 0, 0.3)
     }    
     .menu{
+        display: flex;
         min-width: 1330px;
         margin-top: 25px; 
         position: absolute;
@@ -65,7 +66,7 @@ text-decoration: none;
                     display: none;
                     background: #34495e;
                     position: absolute;
-                    top: 115px;
+                    top: 105px;
                     left: 0px;
                     border-bottom-left-radius:8px;
                     border-bottom-right-radius: 8px;
@@ -717,6 +718,7 @@ ul.circles{
         }
     }
 }
+
 @media only screen and (max-width: 1530px) {
     .page-content1{
         left: 18%;
