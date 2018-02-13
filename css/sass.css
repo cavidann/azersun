@@ -79,7 +79,8 @@ a:hover {
               #home .menu ul .menu-item.dropdown .dropdown-content ul li:last-child {
                 padding-bottom: 5px; }
               #home .menu ul .menu-item.dropdown .dropdown-content ul li:hover {
-                background: rgba(255, 255, 255, 0.4); }
+                background: rgba(255, 255, 255, 0.4);
+                z-index: 100; }
       #home .menu ul .dropdown-1 {
         position: relative;
         transition: 0s; }
@@ -87,11 +88,12 @@ a:hover {
           opacity: 1;
           left: 237px; }
         #home .menu ul .dropdown-1 .dropdown-content-1 {
+          height: 244px;
           opacity: 0;
           background: #142230;
           position: absolute;
           top: -83px;
-          left: 170px;
+          left: 300px;
           border-radius: 8px;
           font-size: 14px;
           overflow: hidden;
@@ -225,6 +227,9 @@ a:hover {
           background: #40556a;
           padding: 0px 15px;
           display: inline-block;
+          overflow: hidden;
+          margin-bottom: -9px;
+          height: 30px;
           transition: 0.5s; }
           #footer .footer-menu .ceo-menu ul li a {
             color: white; }
@@ -233,7 +238,7 @@ a:hover {
           #footer .footer-menu .ceo-menu ul li:last-child {
             border-top-right-radius: 12px; }
           #footer .footer-menu .ceo-menu ul li:hover {
-            padding-top: 15px; }
+            height: 41px; }
 
 .page-content {
   min-width: 1330px;
@@ -393,16 +398,18 @@ a:hover {
       background: #40556a; }
   .page-content.feal.alanlar .owl-nav {
     display: none !important; }
-  .page-content.feal.alanlar img {
+  .page-content.feal.alanlar .owl-carousel img {
     filter: grayscale(100%);
+    opacity: 0.4;
     transition: 0.5s;
     cursor: pointer; }
-    .page-content.feal.alanlar img:hover {
+    .page-content.feal.alanlar .owl-carousel img:hover {
+      opacity: 1;
       filter: grayscale(0%); }
   .page-content.feal.alanlar ul.tabs li {
     width: 33.3%; }
 
-.owl-carousel.one-slide.owl-theme .owl-dots, .owl-carousel.two-slide.owl-theme .owl-dots, .owl-carousel.four-slide.owl-theme .owl-dots {
+.owl-carousel.one-slide.owl-theme .owl-dots, .owl-carousel.two-slide.owl-theme .owl-dots, .owl-carousel.free-slide.owl-theme .owl-dots, .owl-carousel.four-slide.owl-theme .owl-dots {
   display: none !important; }
 
 ul.circles img {
@@ -529,6 +536,26 @@ ul.circles img {
     #footer .footer-menu .ceo-menu.hikayeler-menu ul li:hover {
       height: 98px; }
 
+.page-content.ceo.oduller {
+  color: #34495e; }
+  .page-content.ceo.oduller h1 {
+    padding: 0px; }
+  .page-content.ceo.oduller p {
+    font-size: 11px; }
+  .page-content.ceo.oduller .left, .page-content.ceo.oduller .right {
+    width: 50%;
+    float: left;
+    margin-top: 18px; }
+  .page-content.ceo.oduller .right h6 {
+    margin-bottom: 0px !important; }
+  .page-content.ceo.oduller .right p {
+    padding-bottom: 4px; }
+  .page-content.ceo.oduller .right .oduller-item {
+    padding-left: 20px; }
+    .page-content.ceo.oduller .right .oduller-item:last-child p {
+      padding-bottom: 0px;
+      margin-bottom: 0px; }
+
 @media only screen and (max-width: 1530px) {
   .page-content1 {
     left: 18%; }
@@ -639,7 +666,11 @@ ul.circles img {
     margin-top: 0px; }
 
   .vertical-slider {
-    height: 384px; } }
+    height: 384px; }
+
+  .page-content.ceo.oduller .left, .page-content.ceo.oduller .right {
+    overflow-y: scroll;
+    height: 37vh; } }
 body {
   overflow: hidden;
   display: none; }

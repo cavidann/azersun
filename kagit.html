@@ -8,13 +8,16 @@
     <title>Document</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tabmenu.css">
     <link rel="stylesheet" href="css/sass.css">
 </head>
 
 <body>
 
-    <section id="home" style="background: url(images/basin.jpg) no-repeat;background-size: cover;">
+    <section id="home" style="background: url(images/kagit-bk.jpg) no-repeat;background-size: cover;">
 
         <div class="opacity"></div>
         <div class="container-fluid">
@@ -193,60 +196,101 @@
             </div>
             <!-- menu ends -->
         </div>
-        <section class="page-content">
-            <h3>basın odası</h3>
-            <p>ana sayfa>basın odası</p>
+        <section class="page-content feal alanlar">
+            <h3>faaliyet alanları</h3>
+            <p>ana sayfa>faaliyet alanları>finans</p>
             <div class="row">
-                <div class="basin col-md-3">
-                    <div class="col-md-12">
-                        <div class="image-1"></div>
-                        <div class="layout">
-                            <h4 class="bi-text">
-                                <b>basın</b>bültenleri
-                                <div class="line"></div>
-                            </h4>
-                        </div>
+                <div class="col-md-6">
+                    <ul class="circles">
+                        <li>
+                            <a href="tarim.html">
+                                <img src="images/icons1.png" alt="">
+                                <p>TARIM</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gida.html">
+                                <img src="images/icons2.png" alt="">
+                                <p>GIDA</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kagit.html">
+                                <img src="images/icons3.png" alt="">
+                                <p>KAĞIT ÜRÜNLERİ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="bankacilik.html">
+                                <img src="images/icons4.png" alt="">
+                                <p>FİNANS</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icons5.png" alt="">
+                                <p>İNŞAAT</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="egitim.html">
+                                <img src="images/icons6.png" alt="">
+                                <p>DİĞER İŞTİRAKLAR</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- .tab_menu -->
+                    <ul class="tabs">
+                        <li class="active" rel="tab1" bk-img-url="images/kagit-bk.jpg" style="width:50%;">HİJYENİK KAĞIT</li>
+                        <li rel="tab2" bk-img-url="images/karton-bk.jpg" style="width:50%;">KARTON</li>
+                    </ul>
+                    <div class="tab_container">
+                        <h3 class="d_active tab_drawer_heading" rel="tab1">HİJYENİK KAĞIT</h3>
+                        <div id="tab1" class="tab_content">
+                            <h3>HİJYENİK KAĞIT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga deserunt, inventore, atque
+                                veritatis dignissimos accusamus, repellat magni nobis minus nihil distinctio architecto eum?
+                                Iusto excepturi, sequi reiciendis reprehenderit, officia magni recusandae quam autem, vel
+                                odio hic corporis itaque amet rerum quibusdam facere quia fuga beatae. Nesciunt quod inventore
+                                molestias corrupti, voluptatum doloribus cum sunt consectetur aut asperiores, distinctio
+                                culpa?
+                            </p>
+                            <div class="owl-carousel free-slide owl-theme" style="width:60%;margin:auto">
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="images/kagit1.png">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="images/kagit2.png">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="images/kagit3.png">
+                                    </div>
+                                </div>
+                            </div>
 
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="basin col-md-12">
-                        <div class="image-2"></div>
-                        <div class="layout">
-                            <h4 class="bi-text">
-                                <b>reklam</b>filmleri
-                                <div class="line"></div>
-                            </h4>
                         </div>
-                    </div>
+                        <!-- #tab1 -->
+                        <h3 class="tab_drawer_heading" rel="tab2">KARTON</h3>
+                        <div id="tab2" class="tab_content">
+                            <h3>KARTON</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga deserunt, inventore, atque
+                                veritatis dignissimos accusamus, repellat magni nobis minus nihil distinctio architecto eum?
+                                Iusto excepturi, sequi reiciendis reprehenderit, officia magni recusandae quam autem, vel
+                                odio hic corporis itaque amet rerum quibusdam facere quia fuga beatae. Nesciunt quod inventore
+                                molestias corrupti, voluptatum doloribus cum sunt consectetur </p>
 
-                    <div class="basin col-md-12">
-                        <div class="image-3"></div>
-                        <div class="layout">
-                            <h4 class="bi-text">
-                                <b>foto</b>galeri
-                                <div class="line"></div>
-                            </h4>
                         </div>
+                        <!-- #tab2 -->
                     </div>
-                </div>
-                <div class="basin col-md-3">
-                    <div class="col-md-12">
-                        <div class="image-4"></div>
-                        <div class="layout">
-                            <h4 class="bi-text">
-                                <b>kurumsal</b>birlikler
-                                <div class="line"></div>
-                            </h4>
-                        </div>
-
-                    </div>
-                    <p class="basin_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamu hendrerit leo et ex pellentesque, ac
-                        faucibus lorem tempor. Curanitur eget mollis nisi, vel blandit diam. Vivamus enim nibh, lacinia eget
-                        elit sit amet, viverra feugiat nibh.</p>
+                    <!-- .tab_menu -->
                 </div>
             </div>
-
+            </div>
         </section>
     </section>
     <!-- footer starts -->
@@ -271,7 +315,8 @@
         </div>
     </section>
     <!-- footer ends -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script/owl.carousel.min.js"></script>
     <script src="script/main.js"></script>
 </body>
 
