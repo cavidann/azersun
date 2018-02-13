@@ -16,7 +16,6 @@ text-decoration: none;
         background: rgba(0,0, 0, 0.3)
     }    
     .menu{
-        display: flex;
         min-width: 1330px;
         margin-top: 25px; 
         position: absolute;
@@ -32,6 +31,7 @@ text-decoration: none;
             display: inline-block;
             height: max-content;
             .menu-item{
+                font-size: 15px;
                 padding: 0px 10px; 
                 display: inline;
                 text-transform: uppercase;
