@@ -25,6 +25,7 @@ a:hover {
       display: inline-block;
       float: left; }
     #home .menu ul {
+      margin-top: 35px;
       float: left;
       display: inline-block;
       height: max-content; }
@@ -44,23 +45,25 @@ a:hover {
           #home .menu ul .menu-item:hover a {
             color: #ffffff; }
       #home .menu ul .menu-item.dropdown {
-        padding-bottom: 77px;
         border-radius: 5px;
         position: relative;
         transition: 0s; }
-        #home .menu ul .menu-item.dropdown:hover .dropdown-content {
-          display: block;
-          opacity: 1; }
+        #home .menu ul .menu-item.dropdown:hover {
+          padding-bottom: 77px; }
+          #home .menu ul .menu-item.dropdown:hover .dropdown-content {
+            display: block;
+            opacity: 1; }
         #home .menu ul .menu-item.dropdown .dropdown-content {
           opacity: 0;
           display: none;
           background: #34495e;
           position: absolute;
-          top: 105px;
+          top: 69px;
           left: 0px;
           border-bottom-left-radius: 8px;
           border-bottom-right-radius: 8px; }
           #home .menu ul .menu-item.dropdown .dropdown-content ul {
+            margin-top: 0px;
             list-style: none; }
             #home .menu ul .menu-item.dropdown .dropdown-content ul li {
               border-bottom-left-radius: 8px;
@@ -88,7 +91,6 @@ a:hover {
           opacity: 1;
           left: 237px; }
         #home .menu ul .dropdown-1 .dropdown-content-1 {
-          height: 244px;
           opacity: 0;
           background: #142230;
           position: absolute;
@@ -142,6 +144,7 @@ a:hover {
               #home .menu ul .dropdown-2 .dropdown-content-2 ul li:last-child {
                 padding-bottom: 5px !important; }
     #home .menu select {
+      margin-top: 35px;
       float: left;
       display: block;
       font-weight: 700;
@@ -164,11 +167,13 @@ a:hover {
         outline: 0px; }
     #home .menu i {
       color: #34495e;
-      margin-top: 5px;
+      margin-top: 40px;
       margin-bottom: 24px;
       float: right;
       width: 25px;
       cursor: pointer; }
+    #home .menu .clr {
+      clear: both; }
     #home .menu input {
       padding: 5px 0px;
       border-radius: 8px;
@@ -230,6 +235,8 @@ a:hover {
           overflow: hidden;
           margin-bottom: -9px;
           height: 30px;
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
           transition: 0.5s; }
           #footer .footer-menu .ceo-menu ul li a {
             color: white; }
@@ -238,7 +245,9 @@ a:hover {
           #footer .footer-menu .ceo-menu ul li:last-child {
             border-top-right-radius: 12px; }
           #footer .footer-menu .ceo-menu ul li:hover {
-            height: 41px; }
+            height: 41px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px; }
 
 .page-content {
   min-width: 1330px;
@@ -293,7 +302,9 @@ a:hover {
     .page-content .basin img {
       width: 100%; }
     .page-content .basin .basin_text {
-      margin-top: 30px; }
+      margin-top: 30px;
+      border: 3px dashed;
+      padding: 15px; }
     .page-content .basin .bi-text {
       text-transform: uppercase;
       position: absolute;
@@ -532,7 +543,8 @@ ul.circles img {
     font-weight: 500;
     height: 81px;
     overflow: hidden;
-    margin-bottom: -4px; }
+    margin-bottom: -4px;
+    transition: 0.2s; }
     #footer .footer-menu .ceo-menu.hikayeler-menu ul li:hover {
       height: 98px; }
 
@@ -608,8 +620,7 @@ ul.tabs {
   background: rgba(11, 11, 11, 0.8);
   top: 0px;
   left: 0px;
-  display: none;
-  }
+  display: none; }
   .modal .modal_inner {
     position: relative;
     top: 50%;
@@ -630,6 +641,76 @@ ul.tabs {
 
 iframe {
   border-color: transparent; }
+
+.my-container {
+  width: 1330px;
+  margin: auto;
+  margin-bottom: 5%; }
+  .my-container .items {
+    width: 50%; }
+    .my-container .items .item {
+      width: 16.66%;
+      float: left;
+      padding-right: 20px; }
+    .my-container .items p {
+      font-size: 12px;
+      line-height: 10px; }
+
+.ceo-menu.inovasyon ul li {
+  padding: 0px 59px !important; }
+
+.page-content.feal.iletisim .col-md-8 {
+  padding: 0px !important; }
+.page-content.feal.iletisim .my-md-6 {
+  width: 50%;
+  float: left; }
+  .page-content.feal.iletisim .my-md-6 h3 {
+    font-weight: 100; }
+    .page-content.feal.iletisim .my-md-6 h3 b {
+      font-weight: 700; }
+  .page-content.feal.iletisim .my-md-6 P {
+    padding-bottom: 0px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    text-transform: uppercase; }
+.page-content.feal.iletisim .my-md-6.temsil p {
+  margin: 12px 0px !important; }
+.page-content.feal.iletisim img {
+  margin-bottom: 20px; }
+.page-content.feal.iletisim button {
+  background: #34495e;
+  border-radius: 4px;
+  border: 0px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 7px 28px;
+  transition: 0.2s;
+  cursor: pointer; }
+  .page-content.feal.iletisim button:focus {
+    outline: 0px; }
+  .page-content.feal.iletisim button a {
+    color: white; }
+  .page-content.feal.iletisim button:hover {
+    font-size: 13px; }
+
+.yurt-disi ul.tabs {
+  width: 75%; }
+.yurt-disi h1 {
+  margin-top: 123px; }
+
+.page-content.ceo.ihracat ul {
+  margin-left: -18px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #34495e; }
+.page-content.ceo.ihracat .info {
+  margin-top: 40px; }
+.page-content.ceo.ihracat sub {
+  bottom: -1.25em;
+  font-size: 15px;
+  margin-left: -29px; }
+.page-content.ceo.ihracat p {
+  padding-bottom: 0px; }
 
 @media only screen and (max-width: 1530px) {
   .page-content1 {
@@ -750,6 +831,20 @@ iframe {
   .page-content.ceo .my-md-3 {
     display: block !important;
     overflow-y: scroll;
-    height: 37vh; } }
+    height: 37vh; }
+
+  .my-container {
+    margin-bottom: 30px; }
+
+  .page-content.feal.iletisim .col-md-8 {
+    overflow-y: scroll;
+    height: 318px; }
+
+  .yurt-disi h1 {
+    margin-top: 50px; }
+
+  .page-content.ceo.ihracat .col-md-6 {
+    height: 348px;
+    overflow-y: scroll; } }
 
 /*# sourceMappingURL=sass.css.map */
