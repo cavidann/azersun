@@ -44,6 +44,11 @@ a:hover {
           background: #34495e; }
           #home .menu ul .menu-item:hover a {
             color: #ffffff; }
+      #home .menu ul a {
+        color: #34495e;
+        font-weight: 600; }
+        #home .menu ul a:hover li {
+          color: #ffffff; }
       #home .menu ul .menu-item.dropdown {
         border-radius: 5px;
         position: relative;
@@ -84,6 +89,8 @@ a:hover {
               #home .menu ul .menu-item.dropdown .dropdown-content ul li:hover {
                 background: rgba(255, 255, 255, 0.4);
                 z-index: 100; }
+          #home .menu ul .menu-item.dropdown .dropdown-content a {
+            font-weight: 100; }
       #home .menu ul .dropdown-1 {
         position: relative;
         transition: 0s; }
@@ -110,9 +117,9 @@ a:hover {
                 font-weight: 100;
                 color: #ffffff; }
               #home .menu ul .dropdown-1 .dropdown-content-1 ul li:first-child {
-                padding-top: 5px !important; }
+                padding-top: 1px !important; }
               #home .menu ul .dropdown-1 .dropdown-content-1 ul li:last-child {
-                padding-bottom: 5px !important; }
+                padding-bottom: 1px !important; }
       #home .menu ul .dropdown-2 {
         position: relative;
         transition: 0s; }
@@ -219,6 +226,25 @@ a:hover {
     bottom: 24px;
     z-index: 1;
     transform: translateX(-50%); }
+    #footer .footer-menu .ceo-menu.second li, #footer .footer-menu .ceo-menu.second a {
+      margin-left: -5px !important;
+      background: #40556a;
+      padding: 0px 15px;
+      display: inline-block;
+      overflow: hidden;
+      margin-bottom: -9px;
+      height: 30px;
+      transition: 0.5s; }
+      #footer .footer-menu .ceo-menu.second li a, #footer .footer-menu .ceo-menu.second a a {
+        color: white; }
+      #footer .footer-menu .ceo-menu.second li:first-child, #footer .footer-menu .ceo-menu.second a:first-child {
+        border-top-left-radius: 12px; }
+      #footer .footer-menu .ceo-menu.second li:last-child, #footer .footer-menu .ceo-menu.second a:last-child {
+        border-top-right-radius: 12px; }
+      #footer .footer-menu .ceo-menu.second li:hover, #footer .footer-menu .ceo-menu.second a:hover {
+        height: 41px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px; }
     #footer .footer-menu .ceo-menu {
       display: inline-block;
       border-top-left-radius: 12px;
@@ -227,6 +253,9 @@ a:hover {
       #footer .footer-menu .ceo-menu ul {
         margin: 0px !important;
         margin-left: -35px !important; }
+        #footer .footer-menu .ceo-menu ul a {
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px; }
         #footer .footer-menu .ceo-menu ul li {
           margin-left: -5px !important;
           background: #40556a;
@@ -235,8 +264,6 @@ a:hover {
           overflow: hidden;
           margin-bottom: -9px;
           height: 30px;
-          border-top-left-radius: 0px;
-          border-top-right-radius: 0px;
           transition: 0.5s; }
           #footer .footer-menu .ceo-menu ul li a {
             color: white; }
@@ -388,6 +415,7 @@ a:hover {
     .page-content.feal ul.circles li:hover {
       box-shadow: 1px 1px 4px #00000050; }
     .page-content.feal ul.circles li img {
+      width: 61%;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1088,5 +1116,31 @@ h1, h2, h3, h5, h6 {
 
 #home .menu ul .dropdown-1:nth-child(2) .dropdown-content-1:nth-child(2) {
   top: -44px !important; }
+
+.ceo-menu a {
+  color: white !important; }
+  .ceo-menu a li {
+    color: white !important; }
+
+#home .menu ul .dropdown-1 .dropdown-content-1 ul {
+  width: 200px; }
+
+.menu ul .dropdown-1:nth-child(2) .dropdown-content-1 ul {
+  width: 300px !important; }
+
+.dropdown-content-2 {
+  top: -224px !important; }
+
+#home .menu ul .dropdown-2 .dropdown-content-2 ul li:last-child {
+  padding-bottom: 0px !important; }
+
+#home .menu ul .dropdown-2 .dropdown-content-2 ul li:first-child {
+  padding-top: 0px !important; }
+
+#home .menu ul .menu-item.dropdown:first-child .dropdown-content ul li:last-child {
+  padding-bottom: 0px !important; }
+
+#home .menu ul .menu-item.dropdown:first-child .dropdown-content ul li:last-child {
+  padding-top: 0px !important; }
 
 /*# sourceMappingURL=sass.css.map */
